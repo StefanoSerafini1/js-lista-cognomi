@@ -10,3 +10,12 @@ console.log(cognome);
 while (cognome.length <=0){
   cognome = prompt('Qual è il tuo cognome?');
 }
+//array lista dei cognomi
+var lista = ['Rossi', 'Bianchi', 'Duzioni', 'Balsano', 'Serafini'];
+console.log(lista);
+
+lista.push(cognome); //inserire cognome in coda al array
+
+lista.sort();//funzione sort per ordinare in ordine alfabetico
+
+console.log(lista);
