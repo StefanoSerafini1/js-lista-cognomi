@@ -21,5 +21,8 @@ console.log(lista);
 //ciclo for per stampa della lista
 for (var i = 0; i < lista.length; i++) {
   document.getElementById('listacognomi').innerHTML +=('<li>' + lista[i] + '</li>');
-  console.log(lista[i]);
 }
+
+var index=lista.indexOf(cognome);
+document.getElementById('indexcognome').innerHTML =cognome + ' ' + index;
+console.log(lista.indexOf(cognome) + ' posizione del cognome inserito nella lista');
