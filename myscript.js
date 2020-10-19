@@ -23,6 +23,7 @@ for (var i = 0; i < lista.length; i++) {
   document.getElementById('listacognomi').innerHTML +=('<li>' + lista[i] + '</li>');
 }
 
+//funzione indexOf per capire l'indice del congnome inseritp all'interno del array
 var index=lista.indexOf(cognome);
 document.getElementById('indexcognome').innerHTML =cognome + ' ' + index;
 console.log(lista.indexOf(cognome) + ' posizione del cognome inserito nella lista');
