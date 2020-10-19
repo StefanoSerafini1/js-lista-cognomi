@@ -15,7 +15,11 @@ var lista = ['Rossi', 'Bianchi', 'Duzioni', 'Balsano', 'Serafini'];
 console.log(lista);
 
 lista.push(cognome); //inserire cognome in coda al array
-
 lista.sort();//funzione sort per ordinare in ordine alfabetico
 
 console.log(lista);
+//ciclo for per stampa della lista
+for (var i = 0; i < lista.length; i++) {
+  document.getElementById('listacognomi').innerHTML +=('<li>' + lista[i] + '</li>');
+  console.log(lista[i]);
+}
